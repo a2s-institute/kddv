@@ -1,0 +1,54 @@
+{
+   "Slaves" : [
+      {
+         "Address" : 4097,
+         "EEP ID" : 34603265,
+         "EEP Man" : 5001027,
+         "EEP Rev" : 1,
+         "Name" : "KELO_ROBILE",
+         "RX start offset" : 0,
+         "Slave ID" : 1,
+         "TX start offset" : 156
+      },
+      {
+         "Address" : 4099,
+         "EEP ID" : 33558529,
+         "EEP Man" : 1280,
+         "EEP Rev" : 1020,
+         "Name" : "KELOD105",
+         "RX start offset" : 12,
+         "Slave ID" : 3,
+         "TX start offset" : 224
+      },
+      {
+         "Address" : 4101,
+         "EEP ID" : 33558529,
+         "EEP Man" : 1280,
+         "EEP Rev" : 1020,
+         "Name" : "KELOD105",
+         "RX start offset" : 48,
+         "Slave ID" : 5,
+         "TX start offset" : 396
+      },
+      {
+         "Address" : 4103,
+         "EEP ID" : 33558529,
+         "EEP Man" : 1280,
+         "EEP Rev" : 1020,
+         "Name" : "KELOD105",
+         "RX start offset" : 84,
+         "Slave ID" : 7,
+         "TX start offset" : 568
+      },
+      {
+         "Address" : 4105,
+         "EEP ID" : 33558529,
+         "EEP Man" : 1280,
+         "EEP Rev" : 1020,
+         "Name" : "KELOD105",
+         "RX start offset" : 120,
+         "Slave ID" : 9,
+         "TX start offset" : 740
+      }
+   ]
+}

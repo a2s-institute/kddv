@@ -1,0 +1,54 @@
+{
+   "Slaves" : [
+      {
+         "Address" : 4099,
+         "EEP ID" : 24137745,
+         "EEP Man" : 1280,
+         "EEP Rev" : 1015,
+         "Name" : "SWMC",
+         "RX start offset" : 0,
+         "Slave ID" : 3,
+         "TX start offset" : 180
+      },
+      {
+         "Address" : 4100,
+         "EEP ID" : 24137745,
+         "EEP Man" : 1280,
+         "EEP Rev" : 1015,
+         "Name" : "SWMC",
+         "RX start offset" : 36,
+         "Slave ID" : 4,
+         "TX start offset" : 352
+      },
+      {
+         "Address" : 4102,
+         "EEP ID" : 24137745,
+         "EEP Man" : 1280,
+         "EEP Rev" : 1015,
+         "Name" : "SWMC",
+         "RX start offset" : 72,
+         "Slave ID" : 6,
+         "TX start offset" : 524
+      },
+      {
+         "Address" : 4103,
+         "EEP ID" : 24137745,
+         "EEP Man" : 1280,
+         "EEP Rev" : 1015,
+         "Name" : "SWMC",
+         "RX start offset" : 108,
+         "Slave ID" : 7,
+         "TX start offset" : 696
+      },
+      {
+         "Address" : 4104,
+         "EEP ID" : 24137745,
+         "EEP Man" : 1280,
+         "EEP Rev" : 2004,
+         "Name" : "SWMC",
+         "RX start offset" : 144,
+         "Slave ID" : 8,
+         "TX start offset" : 868
+      }
+   ]
+}
