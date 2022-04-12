@@ -113,9 +113,11 @@ To generate the config file for a robot, connect one of your network interfaces 
 Run with sudo, or set capabilities for raw network access as described under [Execute](#execute).
 
 ## Slave types
-Currently two types of EtherCAT slaves are supported: KELO Drive (identified by the name "KELOD105" (current) or "SWMC" (old)), and the [Robile](https://www.kelo-robotics.com/products/#rapid-prototyping) battery management module (identified by the name "KELO_ROBILE").
-The header files with the definitions of the RX and TX PDOs for both slaves were obtained from the [kelo_tulip](https://github.com/kelo-robotics/kelo_tulip) repository. See [KeloDriveAPI.h](include/KeloDriveAPI.h) and [RobileMasterBattery.h](include/RobileMasterBattery.h).
+Currently three types of EtherCAT slaves are supported: KELO Drive (identified by the name "KELOD105" (current) or "SWMC" (old)), the [Robile](https://www.kelo-robotics.com/products/#rapid-prototyping) battery management module (identified by the name "KELO_ROBILE"), and the EtherCAT coupler/Power distribution board on our dual-arm robot (identified by the name "KeloEcPd").
+The header files with the definitions of the RX and TX PDOs for the first two slaves were obtained from the [kelo_tulip](https://github.com/kelo-robotics/kelo_tulip) repository. See [KeloDriveAPI.h](include/KeloDriveAPI.h) and [RobileMasterBattery.h](include/RobileMasterBattery.h).
 More slave types can be added by implementing the `EthercatSlave` interface.
 
 ## ZMQ publisher
 [PlotJuggler](https://github.com/facontidavide/PlotJuggler) is a nice tool for plotting time-series data. It has a ZMQ plugin which subscribes to a ZMQ socket, and is able to parse data in JSON format. Therefore this program includes a ZMQ publisher to optionally publish the data to a ZMQ socket.
+
+![Sample PlotJuggler image](docs/plotjuggler.png)
