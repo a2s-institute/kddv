@@ -16,6 +16,7 @@
 #include "ethercat_master.h"
 #include "robile_battery_slave.h"
 #include "kelo_drive_slave.h"
+#include "kelo_bms_slave.h"
 #include <ctime>
 
 EthercatMaster::EthercatMaster(const std::string &ifname, std::shared_ptr<ZMQPublisher> zmq_pub) : EthercatDataSource(zmq_pub), ifname(ifname), ethercat_running(false)
@@ -61,6 +62,10 @@ std::vector<std::shared_ptr<EthercatSlave>>& EthercatMaster::getSlaves(std::stri
                     else if (slave_type == KELO_DRIVE_SLAVE)
                     {
                         slave = std::make_shared<KeloDriveSlave>();
+                    }
+                    else if (slave_type == KELO_BMS_SLAVE)
+                    {
+                        slave = std::make_shared<KeloBMSSlave>();
                     }
                     slave->slave_info.slave_type = slave_type;
                     slave->slave_info.name = std::string(ec_slave[cnt].name);

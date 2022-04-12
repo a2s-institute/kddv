@@ -14,6 +14,7 @@
 
 #define KELO_DRIVE_SLAVE 1
 #define ROBILE_BATTERY_SLAVE 2
+#define KELO_BMS_SLAVE 3
 
 struct SlaveInfo
 {

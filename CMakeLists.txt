@@ -42,6 +42,7 @@ if (ENABLE_QT)
         src/packet_sniffer.cpp
         src/kelo_drive_slave.cpp
         src/robile_battery_slave.cpp
+        src/kelo_bms_slave.cpp
         src/zmq_publisher
         src/gui.cpp
         include/gui.h
@@ -64,6 +65,7 @@ if (ENABLE_NCURSES)
         src/packet_sniffer.cpp
         src/kelo_drive_slave.cpp
         src/robile_battery_slave.cpp
+        src/kelo_bms_slave.cpp
         src/zmq_publisher
         src/tui.cpp
         include/tui.h

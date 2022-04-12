@@ -57,6 +57,10 @@ uint8_t getSlaveType(const std::string &name)
     {
         return KELO_DRIVE_SLAVE;
     }
+    if (name == "KeloEcPd")
+    {
+        return KELO_BMS_SLAVE;
+    }
     return -1;
 }
 

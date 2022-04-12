@@ -179,7 +179,8 @@ Json::Value get_info(const std::string &ifname)
             {
                 if (strcmp(ec_slave[cnt].name, "SWMC") == 0 ||
                     strcmp(ec_slave[cnt].name, "KELO_ROBILE") == 0 ||
-                    strcmp(ec_slave[cnt].name, "KELOD105") == 0
+                    strcmp(ec_slave[cnt].name, "KELOD105") == 0 ||
+                    strcmp(ec_slave[cnt].name, "KeloEcPd") == 0
                     )
                 {
                     Json::Value slave_info;

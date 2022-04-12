@@ -8,6 +8,7 @@
 #include "packet_sniffer.h"
 #include "robile_battery_slave.h"
 #include "kelo_drive_slave.h"
+#include "kelo_bms_slave.h"
 #include <iostream>
 #include <fstream>
 #include "ui.h"
@@ -74,6 +75,10 @@ std::vector<std::shared_ptr<EthercatSlave>>& PacketSniffer::getSlaves(std::strin
         else if (slave_type == KELO_DRIVE_SLAVE)
         {
             slave = std::make_shared<KeloDriveSlave>();
+        }
+        else if (slave_type == KELO_BMS_SLAVE)
+        {
+            slave = std::make_shared<KeloBMSSlave>();
         }
 
         slave->slave_info.slave_type = slave_type;
